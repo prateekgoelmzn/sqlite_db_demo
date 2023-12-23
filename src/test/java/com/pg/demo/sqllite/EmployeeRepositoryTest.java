@@ -24,14 +24,14 @@ public class EmployeeRepositoryTest {
 
     @Test
     public void testEmployeeSave(){
-        Employee emp = new Employee("Hritik",23,"coforge");
+        Employee emp = new Employee("firstName",19,"compnayName1");
         Employee persistedEmp =  empRepo.save(emp);
         assertThat(persistedEmp.getId()).isNotNull();
     }
 
     @Test
     public void testSaveEmplDao(){
-        Employee emp = new Employee("Pratiksha",23,"coforge");
+        Employee emp = new Employee("Name2",50,"companyName2");
         Employee persistedEmployee = empDao.saveEmployee(emp);
         assertThat(persistedEmployee).isNotNull();
     }
